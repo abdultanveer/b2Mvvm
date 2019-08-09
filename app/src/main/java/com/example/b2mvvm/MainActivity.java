@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         titleEditText = findViewById(R.id.editTextTitle);
         subTitleEditText = findViewById(R.id.editTextSubtitle);
-        
+
         database = NoteRoomDatabase.getDatabase(this);
         noteDao = database.NoteDao();
     }
